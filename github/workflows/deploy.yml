@@ -1,0 +1,9 @@
+name: deploy-cd
+
+on:
+    push:
+        branches: [main]
+    jobs:
+        standard-version: 
+            name: "conventional commit"
+            runs-on: ubuntu-latest
